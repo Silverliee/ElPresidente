@@ -3,6 +3,7 @@ package Entity;
 public class Choice {
 	// Class attributes
 	private final int number;
+	private final String description;
 	private final int impactOnCapitalist;
 	private final int impactOnCommunist;
 	private final int impactOnLiberal;
@@ -19,7 +20,7 @@ public class Choice {
 	// Class constructor
 	public Choice(
 			int number,
-			int impactOnCapitalist,
+			String description, int impactOnCapitalist,
 			int impactOnCommunist,
 			int impactOnLiberal,
 			int impactOnReligious,
@@ -32,6 +33,7 @@ public class Choice {
 			int impactOnFood,
 			int impactOnTreasury) {
 		this.number = number;
+		this.description = description;
 		this.impactOnCapitalist = impactOnCapitalist;
 		this.impactOnCommunist = impactOnCommunist;
 		this.impactOnLiberal = impactOnLiberal;
@@ -49,6 +51,10 @@ public class Choice {
 	//Getters
 	public int getNumber() {
 		return number;
+	}
+
+	public String getDescription() {
+		return description;
 	}
 
 	public int getImpactOnCapitalist() {

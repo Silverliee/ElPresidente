@@ -4,6 +4,12 @@ import java.util.List;
 import java.util.Random;
 
 public class Season {
+	// Const for season name
+	public static String winter = "winter";
+	public static String spring = "spring";
+	public static String summer = "summer";
+	public static String autumn = "autumn";
+
 	// Class attributes
 	private final String name;
 	private final List<Event> seasonEvents;

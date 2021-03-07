@@ -40,8 +40,12 @@ public class Faction {
 		return satisfaction;
 	}
 
-	public void setSatisfaction(int satisfaction) {
-		this.satisfaction = satisfaction;
+	public void modifySatisfaction(int satisfaction) {
+		if (this.satisfaction != 0) {
+			if (((this.satisfaction += satisfaction) <= 100) && ((this.satisfaction += satisfaction) >= 0)) {
+				this.satisfaction = satisfaction;
+			}
+		}
 	}
 
 	//Class methods
